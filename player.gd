@@ -2,25 +2,27 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
-const TURN_RATE = 5.0
+const TURN_RATE = 3.0
 
 func _physics_process(delta: float) -> void:
 	#Get input direction
-	var mov_direction = 0
-	var turn_direction = 0
-	
+	var direction = Vector2.ZERO
+	var moving = 0
 	if Input.is_action_pressed("right"):
-		if not Input.is_action_pressed("left"):
-			turn_direction = 1
-	elif Input.is_action_pressed("left"):
-		turn_direction = -1
-	elif Input.is_action_pressed("up"):
-		if not Input.is_action_pressed("down"):
-			mov_direction = 1
-	elif Input.is_action_pressed("down"):
-		mov_direction = -1
-	
-	
-	rotate(TURN_RATE * turn_direction * delta)
-	velocity = mov_direction * SPEED * Vector2(sin(rotation),-cos(rotation))
+		direction.x += 1 
+		moving = 1
+	if Input.is_action_pressed("left"):
+		direction.x -= 1
+		moving = 1
+	if Input.is_action_pressed("up"):
+		direction.y -= 1
+		moving = 1
+	if Input.is_action_pressed("down"):
+		direction.y += 1
+		moving = 1
+	print(direction)
+	if moving:
+		rotation = lerp_angle(rotation, direction.angle() + PI/2, TURN_RATE*delta)
+	velocity = moving * SPEED * Vector2(sin(rotation),-cos(rotation))
 	move_and_slide()
+	transform.y = 1.5*moving

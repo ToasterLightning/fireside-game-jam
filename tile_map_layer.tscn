@@ -1,12 +1,12 @@
 [gd_scene load_steps=16 format=4 uid="uid://cmwnbtcfp8sx5"]
 
-[ext_resource type="Texture2D" uid="uid://cdudtv4x1gasi" path="res://Resources/Textures/dirt.png" id="1_xeyxs"]
-[ext_resource type="Texture2D" uid="uid://daqjjfalc2776" path="res://Resources/Textures/grass2.png" id="2_dn2dg"]
-[ext_resource type="Texture2D" uid="uid://mwvgfs0ky5xp" path="res://Resources/Textures/grass.png" id="3_mlybm"]
-[ext_resource type="Texture2D" uid="uid://b8r7twvb6fcj4" path="res://Resources/Textures/idk.png" id="4_gmndn"]
-[ext_resource type="Texture2D" uid="uid://vfq2rppecwef" path="res://Resources/Textures/sand2.png" id="5_dgpaj"]
-[ext_resource type="Texture2D" uid="uid://cswi8p68fldjc" path="res://Resources/Textures/sand.png" id="6_77y11"]
-[ext_resource type="Texture2D" uid="uid://da8dngywaa20f" path="res://Resources/Textures/water.png" id="7_kt4cs"]
+[ext_resource type="Texture2D" uid="uid://bo1tk7d4tgmvu" path="res://Resources/Textures/dirt.png" id="1_xeyxs"]
+[ext_resource type="Texture2D" uid="uid://kjw33xiua8dc" path="res://Resources/Textures/grass2.png" id="2_dn2dg"]
+[ext_resource type="Texture2D" uid="uid://cugu7pxvkq4dg" path="res://Resources/Textures/grass.png" id="3_mlybm"]
+[ext_resource type="Texture2D" uid="uid://b4gbyd5pb4qyi" path="res://Resources/Textures/idk.png" id="4_gmndn"]
+[ext_resource type="Texture2D" uid="uid://optxaiblw1i6" path="res://Resources/Textures/sand2.png" id="5_dgpaj"]
+[ext_resource type="Texture2D" uid="uid://dbkfwv7dt702b" path="res://Resources/Textures/sand.png" id="6_77y11"]
+[ext_resource type="Texture2D" uid="uid://cqj2kkq6ur4vh" path="res://Resources/Textures/water.png" id="7_kt4cs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7qxo"]
 texture = ExtResource("1_xeyxs")
